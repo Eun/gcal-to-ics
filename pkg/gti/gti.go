@@ -155,10 +155,13 @@ func writeHeader(config *Config, cal *calendar.Calendar) error {
 		}
 	}
 
+	calendarName := cal.Summary
 	if config.OverwriteFields.CalendarName != "" {
-		if _, err := fmt.Fprint(config.Writer, "X-WR-CALNAME:", cal.Summary, "\n"); err != nil {
-			return errors.WithStack(err)
-		}
+		calendarName = config.OverwriteFields.CalendarName
+	}
+
+	if _, err := fmt.Fprint(config.Writer, "X-WR-CALNAME:", toText(calendarName), "\n"); err != nil {
+		return errors.WithStack(err)
 	}
 
 	return nil
