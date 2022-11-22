@@ -5,15 +5,9 @@ builds:
     env:
       - "CGO_ENABLED=0"
     goos:
-      - "aix"
       - "darwin"
-      - "dragonfly"
       - "freebsd"
       - "linux"
-      - "netbsd"
-      - "openbsd"
-      - "plan9"
-      - "solaris"
       - "windows"
     goarch:
       - "386"
