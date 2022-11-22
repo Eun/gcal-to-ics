@@ -405,6 +405,7 @@ func writeEvents(service *calendar.Service, calendarID string, config *Config) e
 			ShowDeleted(false).
 			TimeMin(config.StartFrom.Format(time.RFC3339)).
 			TimeMax(config.EndOn.Format(time.RFC3339)).
+			SingleEvents(true).
 			Context(ctx)
 		if nextPageToken != "" {
 			call.PageToken(nextPageToken)
