@@ -1,0 +1,11 @@
+tobias-zededa:
+  account_email: tobias@zededa.com
+  calendar_name: tobias@zededa.com
+  formats:
+    - ics
+  overwrite_fields:
+    visibility: public
+  hide_fields:
+    organizer: true
+    attendees: true
+    conference: true
