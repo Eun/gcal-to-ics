@@ -53,13 +53,13 @@ laborum.`),
 		tt := tt
 		t.Run(fmt.Sprintf("test #%d", i), func(t *testing.T) {
 			t.Parallel()
-			cryptText := crypt(tt.keyToEncrypt, []byte(tt.in))
+			cryptText := crypt(tt.keyToEncrypt, tt.in)
 			decryptText, ok := decrypt(tt.keyToDecrypt, cryptText)
 			require.Equal(t, tt.wantOk, ok)
 			if ok {
-				require.Equal(t, []byte(tt.in), decryptText)
+				require.Equal(t, tt.in, decryptText)
 			} else {
-				require.NotEqual(t, []byte(tt.in), decryptText)
+				require.NotEqual(t, tt.in, decryptText)
 			}
 		})
 	}
