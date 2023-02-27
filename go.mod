@@ -8,7 +8,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/rs/zerolog v1.28.0
 	github.com/stretchr/testify v1.8.2
-	github.com/urfave/cli v1.22.10
+	github.com/urfave/cli v1.22.12
 	golang.org/x/crypto v0.5.0
 	golang.org/x/oauth2 v0.5.0
 	google.golang.org/api v0.110.0
