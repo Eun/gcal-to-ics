@@ -9,7 +9,7 @@ require (
 	github.com/rs/zerolog v1.29.1
 	github.com/stretchr/testify v1.8.2
 	github.com/urfave/cli v1.22.13
-	golang.org/x/crypto v0.8.0
+	golang.org/x/crypto v0.9.0
 	golang.org/x/oauth2 v0.8.0
 	google.golang.org/api v0.118.0
 	gopkg.in/yaml.v3 v3.0.1
