@@ -11,7 +11,7 @@ require (
 	github.com/urfave/cli v1.22.14
 	golang.org/x/crypto v0.11.0
 	golang.org/x/oauth2 v0.10.0
-	google.golang.org/api v0.133.0
+	google.golang.org/api v0.134.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
