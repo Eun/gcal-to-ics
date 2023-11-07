@@ -1,4 +1,4 @@
-# cloud.google.com/go/compute v1.23.0
+# cloud.google.com/go/compute v1.23.1
 ## explicit; go 1.19
 cloud.google.com/go/compute/internal
 # cloud.google.com/go/compute/metadata v0.2.3
@@ -48,10 +48,10 @@ github.com/google/s2a-go/internal/v2/remotesigner
 github.com/google/s2a-go/internal/v2/tlsconfigstore
 github.com/google/s2a-go/retry
 github.com/google/s2a-go/stream
-# github.com/google/uuid v1.3.1
+# github.com/google/uuid v1.4.0
 ## explicit
 github.com/google/uuid
-# github.com/googleapis/enterprise-certificate-proxy v0.3.1
+# github.com/googleapis/enterprise-certificate-proxy v0.3.2
 ## explicit; go 1.19
 github.com/googleapis/enterprise-certificate-proxy/client
 github.com/googleapis/enterprise-certificate-proxy/client/util
@@ -119,7 +119,7 @@ golang.org/x/crypto/internal/alias
 golang.org/x/crypto/internal/poly1305
 golang.org/x/crypto/nacl/secretbox
 golang.org/x/crypto/salsa20/salsa
-# golang.org/x/net v0.16.0
+# golang.org/x/net v0.17.0
 ## explicit; go 1.17
 golang.org/x/net/context
 golang.org/x/net/http/httpguts
@@ -149,7 +149,7 @@ golang.org/x/text/secure/bidirule
 golang.org/x/text/transform
 golang.org/x/text/unicode/bidi
 golang.org/x/text/unicode/norm
-# google.golang.org/api v0.146.0
+# google.golang.org/api v0.150.0
 ## explicit; go 1.19
 google.golang.org/api/calendar/v3
 google.golang.org/api/googleapi
@@ -175,12 +175,12 @@ google.golang.org/appengine/internal/modules
 google.golang.org/appengine/internal/remote_api
 google.golang.org/appengine/internal/urlfetch
 google.golang.org/appengine/urlfetch
-# google.golang.org/genproto/googleapis/rpc v0.0.0-20230920204549-e6e6cdab5c13
+# google.golang.org/genproto/googleapis/rpc v0.0.0-20231030173426-d783a09b4405
 ## explicit; go 1.19
 google.golang.org/genproto/googleapis/rpc/code
 google.golang.org/genproto/googleapis/rpc/errdetails
 google.golang.org/genproto/googleapis/rpc/status
-# google.golang.org/grpc v1.58.2
+# google.golang.org/grpc v1.59.0
 ## explicit; go 1.19
 google.golang.org/grpc
 google.golang.org/grpc/attributes
