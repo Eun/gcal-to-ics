@@ -296,9 +296,9 @@ type Acl struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *Acl) MarshalJSON() ([]byte, error) {
+func (s Acl) MarshalJSON() ([]byte, error) {
 	type NoMethod Acl
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type AclRule struct {
@@ -338,9 +338,9 @@ type AclRule struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *AclRule) MarshalJSON() ([]byte, error) {
+func (s AclRule) MarshalJSON() ([]byte, error) {
 	type NoMethod AclRule
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 // AclRuleScope: The extent to which calendar access is granted by this ACL
@@ -369,9 +369,9 @@ type AclRuleScope struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *AclRuleScope) MarshalJSON() ([]byte, error) {
+func (s AclRuleScope) MarshalJSON() ([]byte, error) {
 	type NoMethod AclRuleScope
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type Calendar struct {
@@ -410,9 +410,9 @@ type Calendar struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *Calendar) MarshalJSON() ([]byte, error) {
+func (s Calendar) MarshalJSON() ([]byte, error) {
 	type NoMethod Calendar
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type CalendarList struct {
@@ -445,9 +445,9 @@ type CalendarList struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *CalendarList) MarshalJSON() ([]byte, error) {
+func (s CalendarList) MarshalJSON() ([]byte, error) {
 	type NoMethod CalendarList
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type CalendarListEntry struct {
@@ -534,9 +534,9 @@ type CalendarListEntry struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *CalendarListEntry) MarshalJSON() ([]byte, error) {
+func (s CalendarListEntry) MarshalJSON() ([]byte, error) {
 	type NoMethod CalendarListEntry
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 // CalendarListEntryNotificationSettings: The notifications that the
@@ -557,9 +557,9 @@ type CalendarListEntryNotificationSettings struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *CalendarListEntryNotificationSettings) MarshalJSON() ([]byte, error) {
+func (s CalendarListEntryNotificationSettings) MarshalJSON() ([]byte, error) {
 	type NoMethod CalendarListEntryNotificationSettings
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type CalendarNotification struct {
@@ -592,9 +592,9 @@ type CalendarNotification struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *CalendarNotification) MarshalJSON() ([]byte, error) {
+func (s CalendarNotification) MarshalJSON() ([]byte, error) {
 	type NoMethod CalendarNotification
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type Channel struct {
@@ -641,9 +641,9 @@ type Channel struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *Channel) MarshalJSON() ([]byte, error) {
+func (s Channel) MarshalJSON() ([]byte, error) {
 	type NoMethod Channel
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type ColorDefinition struct {
@@ -665,9 +665,9 @@ type ColorDefinition struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *ColorDefinition) MarshalJSON() ([]byte, error) {
+func (s ColorDefinition) MarshalJSON() ([]byte, error) {
 	type NoMethod ColorDefinition
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type Colors struct {
@@ -700,9 +700,9 @@ type Colors struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *Colors) MarshalJSON() ([]byte, error) {
+func (s Colors) MarshalJSON() ([]byte, error) {
 	type NoMethod Colors
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type ConferenceData struct {
@@ -759,9 +759,9 @@ type ConferenceData struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *ConferenceData) MarshalJSON() ([]byte, error) {
+func (s ConferenceData) MarshalJSON() ([]byte, error) {
 	type NoMethod ConferenceData
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type ConferenceParameters struct {
@@ -780,9 +780,9 @@ type ConferenceParameters struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *ConferenceParameters) MarshalJSON() ([]byte, error) {
+func (s ConferenceParameters) MarshalJSON() ([]byte, error) {
 	type NoMethod ConferenceParameters
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type ConferenceParametersAddOnParameters struct {
@@ -800,9 +800,9 @@ type ConferenceParametersAddOnParameters struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *ConferenceParametersAddOnParameters) MarshalJSON() ([]byte, error) {
+func (s ConferenceParametersAddOnParameters) MarshalJSON() ([]byte, error) {
 	type NoMethod ConferenceParametersAddOnParameters
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type ConferenceProperties struct {
@@ -827,9 +827,9 @@ type ConferenceProperties struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *ConferenceProperties) MarshalJSON() ([]byte, error) {
+func (s ConferenceProperties) MarshalJSON() ([]byte, error) {
 	type NoMethod ConferenceProperties
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type ConferenceRequestStatus struct {
@@ -855,9 +855,9 @@ type ConferenceRequestStatus struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *ConferenceRequestStatus) MarshalJSON() ([]byte, error) {
+func (s ConferenceRequestStatus) MarshalJSON() ([]byte, error) {
 	type NoMethod ConferenceRequestStatus
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type ConferenceSolution struct {
@@ -881,9 +881,9 @@ type ConferenceSolution struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *ConferenceSolution) MarshalJSON() ([]byte, error) {
+func (s ConferenceSolution) MarshalJSON() ([]byte, error) {
 	type NoMethod ConferenceSolution
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type ConferenceSolutionKey struct {
@@ -912,9 +912,9 @@ type ConferenceSolutionKey struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *ConferenceSolutionKey) MarshalJSON() ([]byte, error) {
+func (s ConferenceSolutionKey) MarshalJSON() ([]byte, error) {
 	type NoMethod ConferenceSolutionKey
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type CreateConferenceRequest struct {
@@ -940,9 +940,9 @@ type CreateConferenceRequest struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *CreateConferenceRequest) MarshalJSON() ([]byte, error) {
+func (s CreateConferenceRequest) MarshalJSON() ([]byte, error) {
 	type NoMethod CreateConferenceRequest
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type EntryPoint struct {
@@ -1035,9 +1035,9 @@ type EntryPoint struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EntryPoint) MarshalJSON() ([]byte, error) {
+func (s EntryPoint) MarshalJSON() ([]byte, error) {
 	type NoMethod EntryPoint
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type Error struct {
@@ -1066,9 +1066,9 @@ type Error struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *Error) MarshalJSON() ([]byte, error) {
+func (s Error) MarshalJSON() ([]byte, error) {
 	type NoMethod Error
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type Event struct {
@@ -1121,6 +1121,7 @@ type Event struct {
 	// - "outOfOffice" - An out-of-office event.
 	// - "focusTime" - A focus-time event.
 	// - "workingLocation" - A working location event.
+	// - "fromGmail" - An event from Gmail. This type of event cannot be created.
 	EventType string `json:"eventType,omitempty"`
 	// ExtendedProperties: Extended properties of the event.
 	ExtendedProperties *EventExtendedProperties `json:"extendedProperties,omitempty"`
@@ -1289,9 +1290,9 @@ type Event struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *Event) MarshalJSON() ([]byte, error) {
+func (s Event) MarshalJSON() ([]byte, error) {
 	type NoMethod Event
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 // EventCreator: The creator of the event. Read-only.
@@ -1318,9 +1319,9 @@ type EventCreator struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventCreator) MarshalJSON() ([]byte, error) {
+func (s EventCreator) MarshalJSON() ([]byte, error) {
 	type NoMethod EventCreator
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 // EventExtendedProperties: Extended properties of the event.
@@ -1344,9 +1345,9 @@ type EventExtendedProperties struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventExtendedProperties) MarshalJSON() ([]byte, error) {
+func (s EventExtendedProperties) MarshalJSON() ([]byte, error) {
 	type NoMethod EventExtendedProperties
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 // EventGadget: A gadget that extends this event. Gadgets are deprecated; this
@@ -1386,9 +1387,9 @@ type EventGadget struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventGadget) MarshalJSON() ([]byte, error) {
+func (s EventGadget) MarshalJSON() ([]byte, error) {
 	type NoMethod EventGadget
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 // EventOrganizer: The organizer of the event. If the organizer is also an
@@ -1419,9 +1420,9 @@ type EventOrganizer struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventOrganizer) MarshalJSON() ([]byte, error) {
+func (s EventOrganizer) MarshalJSON() ([]byte, error) {
 	type NoMethod EventOrganizer
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 // EventReminders: Information about the event's reminders for the
@@ -1447,9 +1448,9 @@ type EventReminders struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventReminders) MarshalJSON() ([]byte, error) {
+func (s EventReminders) MarshalJSON() ([]byte, error) {
 	type NoMethod EventReminders
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 // EventSource: Source from which the event was created. For example, a web
@@ -1475,9 +1476,9 @@ type EventSource struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventSource) MarshalJSON() ([]byte, error) {
+func (s EventSource) MarshalJSON() ([]byte, error) {
 	type NoMethod EventSource
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type EventAttachment struct {
@@ -1510,9 +1511,9 @@ type EventAttachment struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventAttachment) MarshalJSON() ([]byte, error) {
+func (s EventAttachment) MarshalJSON() ([]byte, error) {
 	type NoMethod EventAttachment
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type EventAttendee struct {
@@ -1566,9 +1567,9 @@ type EventAttendee struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventAttendee) MarshalJSON() ([]byte, error) {
+func (s EventAttendee) MarshalJSON() ([]byte, error) {
 	type NoMethod EventAttendee
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type EventDateTime struct {
@@ -1597,9 +1598,9 @@ type EventDateTime struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventDateTime) MarshalJSON() ([]byte, error) {
+func (s EventDateTime) MarshalJSON() ([]byte, error) {
 	type NoMethod EventDateTime
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type EventFocusTimeProperties struct {
@@ -1630,9 +1631,9 @@ type EventFocusTimeProperties struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventFocusTimeProperties) MarshalJSON() ([]byte, error) {
+func (s EventFocusTimeProperties) MarshalJSON() ([]byte, error) {
 	type NoMethod EventFocusTimeProperties
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type EventOutOfOfficeProperties struct {
@@ -1660,9 +1661,9 @@ type EventOutOfOfficeProperties struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventOutOfOfficeProperties) MarshalJSON() ([]byte, error) {
+func (s EventOutOfOfficeProperties) MarshalJSON() ([]byte, error) {
 	type NoMethod EventOutOfOfficeProperties
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type EventReminder struct {
@@ -1689,9 +1690,9 @@ type EventReminder struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventReminder) MarshalJSON() ([]byte, error) {
+func (s EventReminder) MarshalJSON() ([]byte, error) {
 	type NoMethod EventReminder
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type EventWorkingLocationProperties struct {
@@ -1724,9 +1725,9 @@ type EventWorkingLocationProperties struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventWorkingLocationProperties) MarshalJSON() ([]byte, error) {
+func (s EventWorkingLocationProperties) MarshalJSON() ([]byte, error) {
 	type NoMethod EventWorkingLocationProperties
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 // EventWorkingLocationPropertiesCustomLocation: If present, specifies that the
@@ -1747,9 +1748,9 @@ type EventWorkingLocationPropertiesCustomLocation struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventWorkingLocationPropertiesCustomLocation) MarshalJSON() ([]byte, error) {
+func (s EventWorkingLocationPropertiesCustomLocation) MarshalJSON() ([]byte, error) {
 	type NoMethod EventWorkingLocationPropertiesCustomLocation
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 // EventWorkingLocationPropertiesOfficeLocation: If present, specifies that the
@@ -1781,9 +1782,9 @@ type EventWorkingLocationPropertiesOfficeLocation struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *EventWorkingLocationPropertiesOfficeLocation) MarshalJSON() ([]byte, error) {
+func (s EventWorkingLocationPropertiesOfficeLocation) MarshalJSON() ([]byte, error) {
 	type NoMethod EventWorkingLocationPropertiesOfficeLocation
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type Events struct {
@@ -1843,9 +1844,9 @@ type Events struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *Events) MarshalJSON() ([]byte, error) {
+func (s Events) MarshalJSON() ([]byte, error) {
 	type NoMethod Events
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type FreeBusyCalendar struct {
@@ -1867,9 +1868,9 @@ type FreeBusyCalendar struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *FreeBusyCalendar) MarshalJSON() ([]byte, error) {
+func (s FreeBusyCalendar) MarshalJSON() ([]byte, error) {
 	type NoMethod FreeBusyCalendar
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type FreeBusyGroup struct {
@@ -1890,9 +1891,9 @@ type FreeBusyGroup struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *FreeBusyGroup) MarshalJSON() ([]byte, error) {
+func (s FreeBusyGroup) MarshalJSON() ([]byte, error) {
 	type NoMethod FreeBusyGroup
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type FreeBusyRequest struct {
@@ -1924,9 +1925,9 @@ type FreeBusyRequest struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *FreeBusyRequest) MarshalJSON() ([]byte, error) {
+func (s FreeBusyRequest) MarshalJSON() ([]byte, error) {
 	type NoMethod FreeBusyRequest
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type FreeBusyRequestItem struct {
@@ -1945,9 +1946,9 @@ type FreeBusyRequestItem struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *FreeBusyRequestItem) MarshalJSON() ([]byte, error) {
+func (s FreeBusyRequestItem) MarshalJSON() ([]byte, error) {
 	type NoMethod FreeBusyRequestItem
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type FreeBusyResponse struct {
@@ -1977,9 +1978,9 @@ type FreeBusyResponse struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *FreeBusyResponse) MarshalJSON() ([]byte, error) {
+func (s FreeBusyResponse) MarshalJSON() ([]byte, error) {
 	type NoMethod FreeBusyResponse
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type Setting struct {
@@ -2009,9 +2010,9 @@ type Setting struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *Setting) MarshalJSON() ([]byte, error) {
+func (s Setting) MarshalJSON() ([]byte, error) {
 	type NoMethod Setting
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type Settings struct {
@@ -2044,9 +2045,9 @@ type Settings struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *Settings) MarshalJSON() ([]byte, error) {
+func (s Settings) MarshalJSON() ([]byte, error) {
 	type NoMethod Settings
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type TimePeriod struct {
@@ -2067,9 +2068,9 @@ type TimePeriod struct {
 	NullFields []string `json:"-"`
 }
 
-func (s *TimePeriod) MarshalJSON() ([]byte, error) {
+func (s TimePeriod) MarshalJSON() ([]byte, error) {
 	type NoMethod TimePeriod
-	return gensupport.MarshalJSON(NoMethod(*s), s.ForceSendFields, s.NullFields)
+	return gensupport.MarshalJSON(NoMethod(s), s.ForceSendFields, s.NullFields)
 }
 
 type AclDeleteCall struct {
@@ -5285,6 +5286,7 @@ func (c *EventsListCall) AlwaysIncludeEmail(alwaysIncludeEmail bool) *EventsList
 //
 //	"default" - Regular events.
 //	"focusTime" - Focus time events.
+//	"fromGmail" - Events from Gmail.
 //	"outOfOffice" - Out of office events.
 //	"workingLocation" - Working location events.
 func (c *EventsListCall) EventTypes(eventTypes ...string) *EventsListCall {
@@ -5601,8 +5603,8 @@ type EventsMoveCall struct {
 }
 
 // Move: Moves an event to another calendar, i.e. changes an event's organizer.
-// Note that only default events can be moved; outOfOffice, focusTime and
-// workingLocation events cannot be moved.
+// Note that only default events can be moved; outOfOffice, focusTime,
+// workingLocation and fromGmail events cannot be moved.
 //
 //   - calendarId: Calendar identifier of the source calendar where the event
 //     currently is on.
@@ -6235,6 +6237,7 @@ func (c *EventsWatchCall) AlwaysIncludeEmail(alwaysIncludeEmail bool) *EventsWat
 //
 //	"default" - Regular events.
 //	"focusTime" - Focus time events.
+//	"fromGmail" - Events from Gmail.
 //	"outOfOffice" - Out of office events.
 //	"workingLocation" - Working location events.
 func (c *EventsWatchCall) EventTypes(eventTypes ...string) *EventsWatchCall {
