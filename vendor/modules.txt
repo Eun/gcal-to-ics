@@ -19,7 +19,7 @@ cloud.google.com/go/auth/oauth2adapt
 # cloud.google.com/go/compute/metadata v0.5.0
 ## explicit; go 1.20
 cloud.google.com/go/compute/metadata
-# github.com/cpuguy83/go-md2man/v2 v2.0.2
+# github.com/cpuguy83/go-md2man/v2 v2.0.5
 ## explicit; go 1.11
 github.com/cpuguy83/go-md2man/v2/md2man
 # github.com/davecgh/go-spew v1.1.1
@@ -104,7 +104,7 @@ github.com/russross/blackfriday/v2
 ## explicit; go 1.17
 github.com/stretchr/testify/assert
 github.com/stretchr/testify/require
-# github.com/urfave/cli v1.22.14
+# github.com/urfave/cli v1.22.16
 ## explicit; go 1.11
 github.com/urfave/cli
 # go.opencensus.io v0.24.0
