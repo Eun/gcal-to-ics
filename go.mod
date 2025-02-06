@@ -10,7 +10,7 @@ require (
 	github.com/stretchr/testify v1.9.0
 	github.com/urfave/cli v1.22.16
 	golang.org/x/crypto v0.25.0
-	golang.org/x/oauth2 v0.22.0
+	golang.org/x/oauth2 v0.25.0
 	google.golang.org/api v0.191.0
 	gopkg.in/yaml.v3 v3.0.1
 )
